@@ -477,6 +477,8 @@ function! s:NeoDebugEnd(job, status)
     au! NeoDebugAutoCMD
     "back to normal
     call feedkeys("\<ESC>")
+	call feedkeys(":e\<CR>")	
+
 endfunction
 
 function! s:NvimHandleOutput(id, data, event)
